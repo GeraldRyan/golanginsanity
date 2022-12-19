@@ -13,4 +13,12 @@ This is another bit of learning curve but gives you superpowers and is totally w
 In the server, install and configure nginx and letsencrypt (apt install, etc).   
 This is not a tutorial btw, just a summary or outline. You must figure things out on your own.   
 
+### day 2
 
+Installed mongodb into the server as well as mysql and phpmyadmin as seen from some of the config files.  
+This is not a tutorial, just a glorified commit message so you know what's going on behind the scenes or for review. 
+
+### day 3
+
+Installed Node and Go.  
+Ran our first hello world go package gws.go
