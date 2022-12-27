@@ -22,3 +22,7 @@ This is not a tutorial, just a glorified commit message so you know what's going
 
 Installed Node and Go.  
 Ran our first hello world go package gws.go
+
+### day 4
+
+Installed Redis; added ip via ifconfig and added auth to /etc/redis/redis.conf
