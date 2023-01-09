@@ -26,3 +26,7 @@ Ran our first hello world go package gws.go
 ### day 4
 
 Installed Redis; added ip via ifconfig and added auth to /etc/redis/redis.conf
+
+## day 5
+
+Installed all the npm/node/react libraries manually (see package.json) and built up a simple hello world react app page manually. Commented out nginx config pointing to index. See the start command in package.json. This uses parcel to build app and locate it into the dist folder, which nginx is already serving. 

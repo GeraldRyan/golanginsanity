@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+    outline: 0 none !important;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5; 
+}
+
+html, body, #react_root {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+
+    overflow: hidden;
+}

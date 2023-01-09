@@ -15,7 +15,7 @@ server {
     ssl_certificate_key /etc/letsencrypt/live/naturaldopamine.com/privkey.pem;
 
     root /var/www/parcel_blueprint/dist;
-    index index.php index.html index.htm;
+    # index index.php index.html index.htm;
 
     location / {
         try_files $uri $uri/ /index.php?$query_string;
