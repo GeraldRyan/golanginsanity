@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import AppProvider from './AppContext';
 
 const StyledApp = styled.div`
-;`;
+border: 1px solid #f00;`;
 
 import { Dashboard } from './Dashboard';
 

@@ -30,3 +30,22 @@ Installed Redis; added ip via ifconfig and added auth to /etc/redis/redis.conf
 ## day 5
 
 Installed all the npm/node/react libraries manually (see package.json) and built up a simple hello world react app page manually. Commented out nginx config pointing to index. See the start command in package.json. This uses parcel to build app and locate it into the dist folder, which nginx is already serving. 
+
+## day 6 
+
+Implement context that will later be used. Remember `npm run start` rebuilds (and runs) the application on linode via the powerful parcel library that does all this magic under the hood. 
+
+styled-components are a thing, in react, and they use tagged template literals (tagged templates), which are a thing- namely which are a function that is invoked with \`\` instead of (). Example for styled components is just this:
+
+```javascript
+const StyledApp = styled.div`
+border: 1px solid #f00;`;
+```
+
+See the Mozilla docs for more information. In this case, styled returns a react component, class, function or object of some sort that can be used just as any other JSX component can. 
+
+In our case, from a version-space perspective, the app was failing to build with `npm run start` / parcel due to a dependency error with `react-is`, which is apparantly a component testing framework, to determine if a component or object or variable is a react component. It is a plumbing tool that styled used, but for some reason wasn't declared, so `npm install react-is` solved the build fail errror. 
+
+`react-json-view` is a powerful way to display json objects on the front end. 
+
+## day 7
