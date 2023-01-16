@@ -1,18 +1,27 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
-const StyledApp = styled.div`
-border: 1px solid #f00;`
+// hoook based context :: from default function export
+import AppProvider from './AppContext';
 
-export function App(){
+const StyledApp = styled.div`
+;`;
+
+import { Dashboard } from './Dashboard';
+
+
+export function App() {
     return (
         <StyledApp>
-            Hello World
+            <AppProvider>
+                Halo Welt
+                <Dashboard/>
+            </AppProvider>
         </StyledApp>
     )
 }
 
-if (document.getElementById('react_root')){
+if (document.getElementById('react_root')) {
     ReactDOM.render(<App />, document.getElementById('react_root'));
 }
